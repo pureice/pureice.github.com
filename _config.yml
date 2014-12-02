@@ -1,33 +1,19 @@
-# General Jekyll Config
 markdown: kramdown
-pygments: true
-lsi: false
-exclude: [LICENSE, CNAME, README.md, .gitignore]
-url: http://pureice.github.io
+highlighter: pygments
+permalink: blog/:year/:month/:day/:title.html
+paginate: 12
+paginate_path: page/:num
+
+blog:
+    name: Robin Li
+    description: Bioinformatics and Data Science
+    title: Bioinformatics and Data Science
+    url: http://PureIce.github.com 
+    duoshuo: 冰子-大数据
+    tongji: 3Ffb3326a332362ed4b8bc0b37526533f5
 author:
-  name: Robin Li - PureIce
-  email: r.b.li@foxmail.com
-  github: https://github.com/PureIce
-
-
-# Theme customization - please change from the defaults!
-theme:
-  # Color for top bar, links, etc
-  highlight_color: '#3498db'
-
-  # Profile links on the left sidebar, leave blank to ignore
-  social:
-    github: pureice
-    #stackexchange: 348619
-    #stackoverflow: 348619
-    #facebook: zuck
-    #tumblr: animalygifs
-    #linkedin: chrispher-guan/5a/a68/6b8
-    #gplus: 110552447039675960964
-
-  name: Robin Li - PureIce
-  email: r.b.li@foxmail.com
-  tagline: "Keep Mind and Make Difference"
-
-  # Toggle "Postings are my own" disclaimer in footer
-  show_disclaimer: true
+    name: Robin Li
+    email: r.b.li@foxmail.com 
+    weibo: http://weibo.com/u/2310909444
+    github: https://github.com/pureice
+    logo: http://chrispher.github.com/images/me.jpg
