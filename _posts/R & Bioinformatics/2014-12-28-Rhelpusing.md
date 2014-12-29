@@ -47,7 +47,7 @@ R语言作为一门高级语言，同时也是一门入门语言，以其如伪�
 
 一般每一个包都会有一个很General的Pdf，有的会在安装包的时候安装上，有的则不会：可以在R-project上找到相应的包，里面downloads选项中会有一个reference manual，以adegenet包为例（随便找的一个包），他的reference manual长[这个样子](http://mirror.bjtu.edu.cn/cran/web/packages/adegenet/adegenet.pdf)。
 
-<img src="http://pureice.github.com/images/bioinformatics/rhelp-3.png" height="70%" width="70%">
+<img src="http://pureice.github.com/images/bioinformatics/rhelp-3.jpg" height="70%" width="70%">
 
 在本机中，可以在R的安装路径中，找到library文件夹，里面具体的每个包中可能会有Pdf。
 
@@ -62,7 +62,7 @@ R语言作为一门高级语言，同时也是一门入门语言，以其如伪�
 
 如果你不知道这个包里面有什么函数，就是想找找这个包里面有什么函数，不妨试试 ?package，然后点一下下面的index，例如?base。
 
-<img src="http://pureice.github.com/images/bioinformatics/rhelp-4.png" height="20%" width="20%">
+<img src="http://pureice.github.com/images/bioinformatics/rhelp-4.jpg" height="20%" width="20%">
 
 那么接下来一个严峻的为题就是，看不懂help，即找到了需要的函数，所对应的help页面就是看不懂。
 
