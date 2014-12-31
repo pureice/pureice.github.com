@@ -8,9 +8,11 @@ tags: [R, help]
 
 坐拥上千个各行各业各种解决方案的Packages，R虽然是统计学家发明的编程软件，但是近些年来备受生命科学、经济学、社会科学、数据科学等行业的青睐。今年程序员与统计学家在进行数据分析中最受欢迎的工具就是R，同时也是数据科学人员最急需技能的第三位，如下面的两幅图，因此，R在近几年中的前景将会非常出色。
 
-<img src="http://pureice.github.com/images/bioinformatics/rhelp-1.jpg" height="70%" width="70%">
+<!-- more -->
 
-<img src="http://pureice.github.com/images/bioinformatics/rhelp-2.jpg" height="70%" width="70%">
+<img src="http://pureice.github.com/images/bioinformatics/rhelp-1.jpg" height="50%" width="50%">
+
+<img src="http://pureice.github.com/images/bioinformatics/rhelp-2.jpg" height="50%" width="50%">
 
 R语言作为一门高级语言，同时也是一门入门语言，以其如伪代码般的遍写方式，成为了很多初学者第一个接触的语言。R是传统行业进入专业数据分析时的第一块拦路石，因为他们很可能从来没有接触过编程！
 
@@ -18,7 +20,6 @@ R语言作为一门高级语言，同时也是一门入门语言，以其如伪�
 
 一个实验室中，老板对于学生的要求：，R技术问题，如果5分钟想不出来就去找答案，30分钟找不到答案就去问答案。问答案是要在找答案后面的。俗话说，授之以鱼不如授之以渔，一个初学者在遇到问题的时候怎么去解决问题，找到答案的解决方案呢？
 
-<!-- more -->
 
 ###目录
 <!-- MarkdownTOC depth=4 -->
@@ -47,7 +48,7 @@ R语言作为一门高级语言，同时也是一门入门语言，以其如伪�
 
 一般每一个包都会有一个很General的Pdf，有的会在安装包的时候安装上，有的则不会：可以在R-project上找到相应的包，里面downloads选项中会有一个reference manual，以adegenet包为例（随便找的一个包），他的reference manual长[这个样子](http://mirror.bjtu.edu.cn/cran/web/packages/adegenet/adegenet.pdf)。
 
-<img src="http://pureice.github.com/images/bioinformatics/rhelp-3.jpg" height="70%" width="70%">
+<img src="http://pureice.github.com/images/bioinformatics/rhelp-3.JPG" height="70%" width="70%">
 
 在本机中，可以在R的安装路径中，找到library文件夹，里面具体的每个包中可能会有Pdf。
 
@@ -55,25 +56,25 @@ R语言作为一门高级语言，同时也是一门入门语言，以其如伪�
 
 在R里面使用的函数是两个:
 
-	1. ?xxx or help("xxx") 这个函数直接精确到你需要寻找的函数，如果没有函数，则会返回说没有这个函数；
-	2. ??xxx or help.search("xxx") 这个函数是搜索你需要寻找的内容，如果你忘记函数具体的写法或者大小写错了，试试这个
+> 1. ?xxx or help("xxx")：这个函数直接精确到你需要寻找的函数，如果没有函数，则会返回说没有这个函数；
+> 2. ??xxx or help.search("xxx") 这个函数是搜索你需要寻找的内容，如果你忘记函数具体的写法或者大小写错了，试试这个
 
 需要注意一个问题，如果help一个函数，明明书写都对了怎么还是显示没有这个函数呢？那么请先用library()函数导入这个包。
 
 如果你不知道这个包里面有什么函数，就是想找找这个包里面有什么函数，不妨试试 ?package，然后点一下下面的index，例如?base。
 
-<img src="http://pureice.github.com/images/bioinformatics/rhelp-4.jpg" height="20%" width="20%">
+<img src="http://pureice.github.com/images/bioinformatics/rhelp-4.JPG" height="20%" width="20%">
 
 那么接下来一个严峻的为题就是，看不懂help，即找到了需要的函数，所对应的help页面就是看不懂。
 
 打开一个函数的help之后，一般会分为几个部分：
 
-	1. Description 描述，这个函数是干什么的；
-	2. Usage 这个函数怎么使用的，也是很多人盯着看一万遍也看不懂的地方；
-	3. Arguments 函数里面参数的意义及一些default；
-	4. Details 一些函数的细节了；
-	5. See Also 和这个函数相似、相关的东西
-	5. **Examples** 这个部分是最应该尽你最大努力看的东西，不妨试试里面的examples。
+> 1. Description 描述，这个函数是干什么的；
+> 2. Usage 这个函数怎么使用的，也是很多人盯着看一万遍也看不懂的地方；
+> 3. Arguments 函数里面参数的意义及一些default；
+> 4. Details 一些函数的细节了；
+> 5. See Also 和这个函数相似、相关的东西
+> 6. **Examples** 这个部分是最应该尽你最大努力看的东西，不妨试试里面的examples。
 
 这里给新人的建议是，如果在这个页面发现里面的help找到的例子并不能满足使用，那么不妨使用上面所讲的reference manual，里面的例子可能更丰富一些，只是可能。
 
