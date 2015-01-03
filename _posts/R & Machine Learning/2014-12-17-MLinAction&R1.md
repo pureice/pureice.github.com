@@ -9,13 +9,13 @@ tags: [机器学习, R, 前沿与资源]
 本系列博客为入门级博客，如果你初次接触R或者机器学习，欢迎收看；如果你已经入门，那么可以自己搜索资料学习。本系列博客为书籍《机器学习实战》的R语言实现版本，原书上是使用Python实现的，此系列博客主要包括每一部分的机器学习技术的简述、R实现的方法。以下为每一部分的链接，如果到了主页，说明还没有写：
 
 <!-- more -->
-- [1、前言与资源](https:/pureice.github.io/blog/2014/12/17/机器学习实战&R-1.html)
+- [1、前言与资源](https:/pureice.github.io/blog/2014/12/17/MLinAction&R1.html)
 - [2、K-近邻算法](https:/pureice.github.com)
 - [3、决策树](https:/pureice.github.com)
 - [4、朴素贝叶斯](https:/pureice.github.com)
 - [5、Logistic回归](https:/pureice.github.com)
 - [6、支持向量机](https:/pureice.github.com)
-- [7、AdaBoost](https:/pureice.github.com)
+- [7、AdaBoost](https:/pureice.github.com/blog/2015/1/1/MLinAction&R7.html)
 - [8、回归](https:/pureice.github.com)
 - [9、树回归](https:/pureice.github.com)
 - [10、K-均值聚类](https:/pureice.github.com)
