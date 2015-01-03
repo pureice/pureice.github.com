@@ -81,11 +81,8 @@ AdaBoost是adaptive Boosting即（自适应Boosting）的缩写，其运行过�
 
 alpha的计算公式如下：$$\alpha =0.5 * ln(\frac{1-\epsilon}{\epsilon})$$。
 
-在计算出alpha后，样本的权重向量*D*进行更新：
-
-> 1. 如果分类正确，$$D_i^{(i+1)}=\frac{D_i^{(t)}*e^{-\alpha}}{Sum(D)}$$，权重降低；
-
-> 2. 如果分类错误，$$D_i^{(i+1)}=\frac{D_i^{(t)}*e^{\alpha}}{Sum(D)}$$，权重增加。
+在计算出alpha后，样本的权重向量*D*进行更新：1. 如果分类正确，$$D_i^{(i+1)}=\frac{D_i^{(t)}*e^{-\alpha}}{Sum(D)}$$，权重降低；
+2. 如果分类错误，$$D_i^{(i+1)}=\frac{D_i^{(t)}*e^{\alpha}}{Sum(D)}$$，权重增加。
 
 在计算出新的*D*之后，新的迭代开始；关于上面这几个公式的推到，可以参考AdaBoost[原始文献](http://link.springer.com/chapter/10.1007/3-540-59119-2_166)。
 
@@ -350,6 +347,6 @@ AdaBoost的大致流程图如下：
 
 针对非均衡问题调节分类器的方法，除了上面的新的评价方法，还有的是对分类器的训练数据进行改造。这可以通过欠抽样(undersampling)或者过抽样(oversampling)来实现。过抽样意味着复制样例，而欠抽样意味着删除样例。不管采用哪种方式，数据都会从原始形式改造为新形式。抽样过程则可以通过随机方式或者某个预定方式来实现。
 
-第7章的Code[下载地址](https://github.com/pureice/pureice.github.com/tree/master/code/ML&R)。
+第7章的Code[下载地址](https://github.com/pureice/pureice.github.com/tree/master/code/ML%26R)。
 
 如需转载，请著名作者Robin Li以及[Pureice.github.com](http:/pureice.github.cim)，谢谢你的配合~
