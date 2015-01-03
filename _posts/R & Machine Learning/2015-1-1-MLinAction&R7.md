@@ -82,8 +82,10 @@ AdaBoost是adaptive Boosting即（自适应Boosting）的缩写，其运行过�
 alpha的计算公式如下：$$\alpha =0.5 * ln(\frac{1-\epsilon}{\epsilon})$$。
 
 在计算出alpha后，样本的权重向量*D*进行更新：
-1. 如果分类正确，$$D_i^(i+1)=\frac{D_i^(t)*e^{-\alpha}}{Sum(D)}$$，权重降低；
-2. 如果分类错误，$$D_i^(i+1)=\frac{D_i^(t)*e^{\alpha}}{Sum(D)}$$，权重增加。
+
+> 1. 如果分类正确，$$D_i^{(i+1)}=\frac{D_i^{(t)}*e^{-\alpha}}{Sum(D)}$$，权重降低；
+
+> 2. 如果分类错误，$$D_i^{(i+1)}=\frac{D_i^{(t)}*e^{\alpha}}{Sum(D)}$$，权重增加。
 
 在计算出新的*D*之后，新的迭代开始；关于上面这几个公式的推到，可以参考AdaBoost[原始文献](http://link.springer.com/chapter/10.1007/3-540-59119-2_166)。
 
