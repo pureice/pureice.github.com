@@ -46,7 +46,7 @@ Meta-algrithm(元算法)的基本思想是不听从一个人的意见，而是�
 
 AdaBoost的优缺点
 
-> 优点：繁华错误率低，已编码，可以用在大部分分类器上，无参数调节；
+> 优点：泛化错误率低，已编码，可以用在大部分分类器上，无参数调节；
 > 缺点：对离群值敏感；
 > 数据类型：数值型和标称型数据。
 
@@ -54,11 +54,11 @@ AdaBoost的优缺点
 
 Bagging算法又称自举汇聚法(Booststrap aggregating)。Bagging法的特点在于抽样，抽样的方法为重抽样，例如一个样本中，有N条记录，重抽样便是在这N条记录中抽取N条记录，在R中可以使用sample(x, size, replace = True)的方法进行重抽样。重抽样得到S个新的样本，每个样本便可以生产一个弱学习机，便是S个弱学习机，最后的结果便是这S个弱学习机的集成方法，例如S个分类器中结果对多的那个。Bagging方法不仅可以用于分类，同样也使用于计算统计量，例如计算一组N个数样本的均值，如果怀疑这个样本的可靠性，可以使用Bagging生成S个样本，也可以生成S个均值，可以得到这个均值的均值和方差，有文献报道在够大的抽样情况下，这N个样本的均值的均值和方差可以收敛到一个稳定的值。
 
-还有一些现金Bagging法，例如随即森林[(Random Forest)](http://en.wikipedia.org/wiki/Random_forest)，还是看英文的好。
+还有一些先进Bagging法，例如随即森林[(Random Forest)](http://en.wikipedia.org/wiki/Random_forest)，还是看英文的好。
 
 #####1.1.2 Boosting方法
 
-Boosting和Bagging方法相似，也是用的同样类型的学习机。Boosting方法更关注的是已有分类器错分的那些数据，最后结果也是不同弱分类器的分类效能加权而得，分类效能低的权重低，分类效能高的权重高；而Boosting最后结果靠不同弱分类的权重是一样的。
+Boosting和Bagging方法相似，也是用的同样类型的学习机。Boosting方法更关注的是已有分类器错分的那些数据，最后结果也是不同弱分类器的分类效能加权而得，分类效能低的权重低，分类效能高的权重高；而Bagging最后结果靠不同弱分类的权重是一样的。
 
 Yoav Freund在1996的Experiments with a New Boosting Algorithm中提出了AdaBoost.M1和AdaBoost.M2两种算法。其中，AdaBoost.M1是我们通常所说的Discrete AdaBoost：而AdaBoost.M2是M1的泛化形式。该文的一个结论是:当弱分类器算法使用简单的分类方法时，boosting的效果明显地统一地比bagging要好。当弱分类器算法使用C4.5时，boosting比bagging较好，但是没有前者的比较来得明显。
 
@@ -347,6 +347,6 @@ AdaBoost的大致流程图如下：
 
 针对非均衡问题调节分类器的方法，除了上面的新的评价方法，还有的是对分类器的训练数据进行改造。这可以通过欠抽样(undersampling)或者过抽样(oversampling)来实现。过抽样意味着复制样例，而欠抽样意味着删除样例。不管采用哪种方式，数据都会从原始形式改造为新形式。抽样过程则可以通过随机方式或者某个预定方式来实现。
 
-第7章的Code[下载地址](https://github.com/pureice/pureice.github.com/tree/master/code/ML%26R)。
+第7章的Code[下载地址](https://github.com/pureice/pureice.github.com/tree/master/code/ML%26R) and the [Englishe edition](https://github.com/pureice/pureice.github.com/tree/master/code/ML%26R).
 
 如需转载，请著名作者Robin Li以及[Pureice.github.com](http:/pureice.github.cim)，谢谢你的配合~
