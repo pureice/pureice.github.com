@@ -1,0 +1,118 @@
+#---------------------------------------------------------------
+# Theme version infromation
+#---------------------------------------------------------------
+version: 1.0
+
+#---------------------------------------------------------------
+# Build setting
+#---------------------------------------------------------------
+gems: [jekyll-paginate]
+# Config sass build output by sass_dir
+# Config sass output is compressed or not
+#
+sass:
+    sass_dir: /assets/stylesheet
+    style: :compressed
+
+
+#---------------------------------------------------------------
+# Site infromation setting
+#---------------------------------------------------------------
+
+# Site
+## You can create a locale setting at _locales and name *.yml
+title: "Biostatistics Lover"
+description: "Clincal Trails and Biostatistics for Mediciens"
+keywords: "Biostatistics; Clinical Trals; Mediciens"
+locale: "zh_CN"
+
+# URL
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and baseurl as '/child/'
+url: "http://PureIce.github.io"
+#baseurl: ""
+permalink: /:year/:month/:day/:title
+
+
+# Pagination
+## Set per_page to 0 to disable pagination
+paginate: 5
+paginate_path: "/page:num/"
+
+
+# Writing
+highlighter: 'pygments'
+kramdown:
+  input:  GFM
+  enable_coderay: true
+  coderay:
+    coderay_line_numbers:  nil
+
+# RSS
+rss:
+  path: "/feed.xml"
+  icon: "rss"
+
+
+#---------------------------------------------------------------
+# Authour infromation setting
+#---------------------------------------------------------------
+
+# Author
+author:
+  name: "Robin Li"
+  avatar: "http://pureice.github.com/file/images/me2.jpg"
+  motto: "Keep running and Life will not stop"
+
+# Socials
+## If you want the social show,place sure the social no comment
+## The socials icon base font-awesome,you can learn more on http://fontawesome.io/icons/
+socials:
+#    - name: "weibo"
+#      url: "http://www.weibo.com/usename/"
+#      icon: "weibo"
+    - name: "github"
+      url: "https://github.com/pureice"
+      icon: "github"
+#    - name: "facebook"
+#      url: "https://www.facebook.com/usename"
+#      icon: "facebook"
+
+
+
+
+#---------------------------------------------------------------
+# Site comment setting
+#---------------------------------------------------------------
+
+comment:
+  enable: true
+
+# duoshuo
+duoshuo:
+  enable: false
+  short_name: "your duoshuo short_name"
+
+# disqus
+disqus:
+  enable: false
+  short_name: "your disqus short_name"
+
+#---------------------------------------------------------------
+# Site share setting
+#---------------------------------------------------------------
+duoshuo_share:
+    enable: false
+
+#---------------------------------------------------------------
+# Site analysis setting
+#---------------------------------------------------------------
+# Baidu analysis
+baidu_analysis:
+  enable: false
+  token: "your baidu analysis token"
+
+# Google analysis
+google_analysus:
+  enable: false
+  token: "your google analysis token"
+
