@@ -1,0 +1,19 @@
+markdown: kramdown
+highlighter: pygments
+permalink: blog/:year/:month/:day/:title.html
+paginate: 12
+paginate_path: page/:num
+
+blog:
+    name: Robin Li
+    description: Clincal Trails and Biostatistics for Mediciens.
+    title: Clinical Trails and Biostatistics
+    url: http://PureIce.github.io 
+    duoshuo: pureice
+    # tongji: 3Fca70591450b95f8b7d7de185c49db345
+author:
+    name: Robin Li
+    email: r.b.li@foxmail.com 
+    # weibo: http://weibo.com/u/2310909444
+    github: https://github.com/pureice
+    logo: http://pureice.github.com/images/me2.jpg
