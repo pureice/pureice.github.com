@@ -1,7 +1,6 @@
 ---
 layout: blog
 post: true
-math: true
 ---
 
 <header class="post-header">
@@ -10,15 +9,10 @@ math: true
     <i class="fa fa-calendar"></i>
     {{ page.date | date: "%Y" }}年{{ page.date | date: "%m" }}月{{ page.date | date: "%d" }}日
     <i class="space"></i>
-    <i class="fa fa-archive"></i>
-    <a class="post-category" href="/page/category.html#{{ page.categories }}">{{ page.categories }}</a>	
-    <i class="space"></i>
-    <i class="fa fa-tags"></i>
-    {% for tag in page.tags %}
-      <a class="post-tag" href="/page/tags.html#{{ tag }}">{{tag}}</a>
-      <i class="space"></i>
+    {% for item in (0..page.categories.size) %}
+    {% unless forloop.last %}<i class="fa fa-tags"></i>{% endunless %}
+    <a class="post-category" href="/page/category.html#{{ page.categories[item] }}">{{ page.categories[item] }}</a>
     {% endfor %}
-    <i class="space"></i> 字数:{{page.content | size |divided_by:2}}
   </p>
 </header>
 <div class="post-main">
@@ -37,4 +31,4 @@ math: true
 <span class="pagination-item older">下一篇&nbsp;<i class="fa fa-chain-broken"></i></span>
 {% endif %}
 </div>
-{% include duoshuo.html %}
+{% if page.duoshuo != false %}{% include duoshuo.html %}{% endif %}
